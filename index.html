@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiceDom - Random Dice Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="red-background" id="banner">DiceDom - Random Dice Simulator</div>
+    
+    <section id="section1">
+        <div class="top-bottom-margin">
+            How many<br />
+            <span id="large-text">faces</span><br />
+            would you like the die have?  
+        </div>
+        <div class="flex-row bottom-margin" id="faces">
+            <button>4</button>
+            <button>6</button>
+            <button>8</button>
+            <button>10</button>
+            <button>12</button>
+        </div>
+        <div class="bottom-margin" id="faces-img">
+            <img src="./images/Dice6.png" alt="6-sided die" width=150px>
+        </div>
+        <button class="bottom-margin nav-primary">next</button>
+    </section>
+
+    <section class="hidden-section" id="section2">
+        <div class="top-bottom-margin">
+            How many<br />
+            <span id="large-text">dice</span><br />
+            would you like to have?  
+        </div>
+        <div class="flex-row bottom-margin" id="dice">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+        </div>
+        <div class="bottom-margin" id="num-img">
+            <img src="./images/Dice6.png" alt="6-sided die">
+        </div>
+        <div class="flex-row bottom-margin" id="section2nav">
+            <button class="nav-secondary">previous</button>
+            <button class="nav-primary">next</button>
+        </div>
+    </section>
+
+    <section class="hidden-section" id="section3">
+        <div class="top-bottom-margin">
+            Ready to<br />
+            <span id="large-text">throw</span><br />
+            the dice.  
+        </div>
+        <div class="bottom-margin" id="final-img">
+            <img src="./images/Dice6.png" alt="6-sided die">
+        </div>
+        <div class="bottom-margin" id="outcome-img">
+            <img />
+        </div>
+        <div class="flex-row bottom-margin" id="section3nav">
+            <button class="nav-secondary">reset</button>
+            <button class="nav-primary">throw</button>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p class="footer-text">All rights reserved 2023</p>
+        <p class="footer-text" id="center-text">Designed and Developed by <a target="_blank" href="https://www.linkedin.com/in/theagnesang">Agnes Ang</a></p>
+        <p class="footer-text" id="right-text"><a href="mailto:agnesagf0@gmail.com">Get in touch 😊</a></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

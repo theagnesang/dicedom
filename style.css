@@ -1,0 +1,218 @@
+body {
+ background-image: linear-gradient(to right, #181818 , #222222);
+ font-family: 'Fraunces', serif;
+ color: whitesmoke;
+ font-size: 28px;
+ font-weight: 300;
+ font-style: italic;
+ margin: 0px;
+ padding: 0px;
+}
+
+.red-background {
+    background-color: #6C0000;
+}
+
+#banner {
+    font-size: 12px;
+    font-weight: 600;
+    color: whitesmoke;
+    font-style: normal;
+    padding: 8px 20px;
+    position: fixed;
+    width: 100%;
+   }
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hidden-section {
+    display: none;
+}
+
+.footer-text {
+    font-size: 12px;
+    font-weight: 300;
+   }
+
+img {
+    width: 150px;
+}
+
+#large-text {
+    font-family: Controwell;
+    src: url(.fonts/Controwell-Italic.otf);
+    font-size: 128px;
+    margin-top: -25px;
+    margin-bottom: -90px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    background-color: #6C0000;
+    color: whitesmoke;
+    font-family: Controwell;
+    src: url(./fonts/Controwell-Italic.otf);
+    font-size: 32px;
+    border-radius: 50%;
+    width: 60px;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.nav-primary {
+    width: 130px;
+    border: 3px solid whitesmoke;
+    border-radius: 7%;
+    padding: 8px 10px 1px 10px;
+    font-size: 25px;
+    opacity: 0;
+    cursor: default;
+}
+
+.nav-secondary {
+    width: 130px;
+    border: 3px solid whitesmoke;
+    border-radius: 7%;
+    padding: 8px 10px 1px 10px;
+    color: whitesmoke;
+    background-color: #006C0000;
+    font-size: 25px;
+    opacity: 0;
+    cursor: default;
+}
+
+.nav-active {
+    opacity: 100;
+    cursor: pointer;
+}
+
+a {
+    color: azure;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-style: normal;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.top-bottom-margin {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.bottom-margin {
+    margin-bottom: 40px;
+}
+
+#center-text {
+    text-align: center;
+}
+
+#right-text {
+    text-align: right;
+}
+
+#num-img {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#final-img {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#outcome-img {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    img {
+        width: 120px;
+    }
+
+    #large-text {
+        font-size: 100px;
+        margin-bottom: -80px;
+    }
+
+    body {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    img {
+        width: 100px;
+    }
+
+    #large-text {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #large-text {
+        font-size: 80px;
+        margin-top: -15px;
+        margin-bottom: -60px;
+    }
+
+    body {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 22px;
+        padding-top: 8px;
+        width: 48px;
+    }
+
+    .flex-row {
+        width: 350px;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*
+
+Breakpoint
+X-Small 	        None    <576px
+Small   	        sm  	≥576px
+Medium  	        md	    ≥768px
+Large	            lg	    ≥992px
+Extra large	        xl	    ≥1200px v
+Extra extra large	xxl	    ≥1400px v
+
+*/
