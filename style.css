@@ -241,59 +241,52 @@ a {
     body {
         font-size: 24px;
     }
+
+    section {
+        justify-content: flex-start;
+        padding-top: 50px;
+        min-height: 90vh;
+        padding-bottom: 40px;
+    }
 }
 
-@media screen and (max-width: 850px) {
-    img {
-        width: 100px;
-    }
-
+@media screen and (max-width: 768px) {
     #large-text {
         font-size: 100px;
-    }
-
-    .bottom-margin {
-        margin-bottom: 25px;
-    }
-}
-
-@media screen and (max-width: 730px) {
-    #large-text {
-        font-size: 60px;
         margin-top: -10px;
-        margin-bottom: -45px;
+        margin-bottom: -65px;
     }
 
     body {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     button {
-        font-size: 22px;
-        padding-top: 8px;
-        width: 58px;
+        font-size: 32px;
+        padding-top: 13px;
+        width: 68px;
+    }
+
+    section {
+        justify-content: flex-start;
+        padding-top: 50px;
+        min-height: 90vh;
+        padding-bottom: 40px;
     }
 
     .flex-row {
-        width: 350px;
+        width: 80vw;
         flex-wrap: wrap;
+        max-width: 500px;
     }
 
     .bottom-margin {
-        margin-bottom: 25px;
-    }
-
-    .nav-primary {
-        scale: 80%;
-    }
-
-    .nav-secondary {
-        scale: 80%;
+        margin-bottom: 50px;
     }
 
     img {
-        width: 20vw;
-        max-width: 85px;
+        width: 25vw;
+        max-width: 120px;
     }
 
     #num-img {
@@ -313,17 +306,12 @@ a {
         max-width: 85vw;
         flex-wrap: wrap;
     }
+
 }
 
 @media screen and (max-width: 576px) {
     body {
-        font-size: 5vw;
-        
-    }
-
-    section {
-        justify-content: start;
-        padding-bottom: 2vh;
+        font-size: 5.5vw;
     }
 
     #banner {
@@ -332,23 +320,21 @@ a {
     }
 
     #large-text {
-        font-size: 20vw;
-        margin-bottom: -14vw;
-        margin-top: -1vw;
+        font-size: 22vw;
+        margin-bottom: -17vw;
+        margin-top: -4vw;
     }
 
     button {
-        font-size: 25px;
-        padding-top: 8px;
-        width: 13vw;
-        min-width: 50px;
-        max-width: 51px;
+        font-size: 12vw;
+        padding-top: 15px;
+        width: 85px;
     }
 
     .flex-row {
         flex-wrap: wrap;
         gap: 10px;
-        width: 45vw;
+        width: 85vw;
         min-width: 180px;
         justify-content: center;
     }
@@ -372,21 +358,19 @@ a {
     }
 
     .nav-primary {
-        scale: 100%;
-        width: 35vw;
+        width: 55vw;
         font-size: 7vw;
         min-width: 100px;
     }
 
     .nav-secondary {
-        scale: 100%;
-        width: 35vw;
+        width: 55vw;
         font-size: 7vw;
         min-width: 100px;
     }
 
     .top-bottom-margin {
-        margin-top: 75px;
+        margin-top: 2vh;
     }
 
     .footer-text {
@@ -444,11 +428,11 @@ a {
 /*
 
 Breakpoint
-X-Small 	        None    <576px
-Small   	        sm  	≥576px
-Medium  	        md	    ≥768px
-Large	            lg	    ≥992px
-Extra large	        xl	    ≥1200px v
-Extra extra large	xxl	    ≥1400px v
+X-Small 	        None    <576px      mobile portrait
+Small   	        sm  	≥576px      mobile landscape
+Medium  	        md	    ≥768px      tablet portrait
+Large	            lg	    ≥992px      tablet landscape & laptop
+Extra large	        xl	    ≥1200px     desktop
+Extra extra large	xxl	    ≥1400px     large screens
 
 */
