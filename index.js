@@ -84,12 +84,16 @@ $("#dice > button").click(function(e){
 
 // ---
 
-
-/* scroll to top for Previous & Reset buttons */
+/*when the previous and reset buttons are clicked*/
 function backToTop(){
-    $('html, body').animate({
+    $('html, body').animate({   // scroll to top for Previous & Reset buttons
         scrollTop: 0
-      }, 1000);
+        }, 1000,
+        function () {   // use callback function so that it runs after the animation is complete
+            $("#section3").addClass("hidden-section");  // hide section 3
+            $("#section2").addClass("hidden-section");  // hide section 2
+        }
+    );
 }
 
 
